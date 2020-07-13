@@ -9,5 +9,8 @@ module.exports = {
     },
     devServer: {
         contentBase: './dist',
+    },
+    externals: {
+        moment: 'moment'
     }
 };
