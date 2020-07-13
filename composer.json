@@ -1,0 +1,16 @@
+{
+    "name": "ultra/machine-learning-php",
+    "authors": [
+        {
+            "name": "UltraProjectPl",
+            "email": "jakub.sumara09@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "scripts": {
+        "start": "php -S 127.0.0.1:8000 -t ./"
+    }
+}
