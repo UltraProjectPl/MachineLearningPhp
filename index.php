@@ -13,4 +13,9 @@ foreach ($rows as $row) {
     $data[] = str_getcsv($row);
 }
 
-dump($data);
+// Species of Iris
+$specificDataTypes = array_column(array_slice($data,0, 100), 4);
+$specificDataTypes = array_map(fn (string $specie) => $specie === 'Iris-versicolor' ? 1 : -1, $specificDataTypes);
+
+$informationData =  array_slice($data, 100);
+$informationData = array_map(null, array_column($informationData, 0), array_column($informationData, 2));
